@@ -1,0 +1,42 @@
+.story{
+  &_picture{
+    background-color: red;
+    grid-column: full-start/ col-end 4 ;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+
+    align-items: center;
+
+    background-image:linear-gradient(rgba($color-primary,.5)), url(../img/back.jpg);
+  }
+  &_content{
+    // background-color: pink;
+    padding: 6rem 8vw;
+    grid-column: col-start 5/ full-end;
+    font-size: 1.6rem;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+
+    display: grid;
+    align-content: center;
+    justify-items: flex-start;
+}
+
+&_img_1{
+  width: 100%;
+  grid-column: 2/6;
+  grid-row: 2/6;
+}
+
+&_img_2{
+  width: 115%;
+  grid-row: 4/6;
+  grid-column: 4/7;
+}
+}
+
+
