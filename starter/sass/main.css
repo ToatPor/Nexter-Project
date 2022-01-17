@@ -430,5 +430,43 @@ body {
 .footer {
   background-color: #101d2c;
   grid-column: full-start/full-end;
+  padding: 9rem 2rem;
+}
+
+.nav_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  list-style: none;
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.nav_link:link, .nav_link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.nav_link:hover, .nav_link:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  width: 80%;
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #aaa;
 }
 /*# sourceMappingURL=main.css.map */
