@@ -1,5 +1,50 @@
-.sidebar{
+.sidebar {
   background-color: $color-primary;
   grid-column: sidebar-start/ sidebar-end;
   grid-row: 1/-1;
+  display: grid;
+  justify-content: center;
+  // margin-top:;
+  position: relative;
+  // align-items: center;
+}
+
+.nav_btn {
+
+  border: none;
+  border-radius: 0;
+  // display: block;
+  background-color: #fff;
+  width: 4.5rem;
+  height: 2px;
+  margin-top: 2rem;
+  margin-left: 20%;
+
+
+ 
+  &,
+  &::before,
+  &::after {
+    content: "";
+    background-color: #fff;
+    width: 4.5rem;
+    height: 2px;
+    // display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+  &::after {
+    transform: translateY(.02rem);
+    margin-top: 2rem;
+  }
+
+  &::before {
+    transform: translateY(.2rem);
+    margin-top: .8rem;
+  }
+
+
 }

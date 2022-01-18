@@ -61,7 +61,7 @@ body {
 }
 
 .heading-1 {
-  font-size: 4.5rem;
+  font-size: 6rem;
   color: #f9f7f6;
   line-height: 1;
 }
@@ -288,6 +288,10 @@ body {
   max-width: 100%;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
+}
+
+.header_logo {
+  width: 5rem;
 }
 
 .realtors {

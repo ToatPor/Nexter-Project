@@ -42,8 +42,8 @@ body {
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   // 1140px / 8 colunms = 142px 142/10 = 14 rem calculate for colunm
   //put 8 colunm to center first then occupy remaining space by using 1fr
-  grid-template-columns: [sidebar-start]8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(6rem, 1fr) [full-end];
-}
+    grid-template-columns: [sidebar-start]8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start]repeat(8, [col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(6rem, 1fr) [full-end];
+  }
 
 .margin_sm {
   margin-bottom: 2rem;
