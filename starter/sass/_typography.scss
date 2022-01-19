@@ -9,6 +9,10 @@
   line-height: 1;
   color: #fff;
   margin-bottom: auto;
+
+  @media only screen and (max-width: $break_point_small){
+    font-size: 4rem;
+  }
 }
 .heading_2{
   @extend %heading;

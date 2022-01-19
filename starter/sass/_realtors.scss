@@ -1,6 +1,8 @@
 .realtors{
   background-color: $color-secondary;
   grid-column: col-start 7/full-end;
+  padding: 6rem;
+  
 
   display: grid;
   justify-content: center;
@@ -8,6 +10,9 @@
   // justify-items: center;
   grid-row-gap: 5rem;
 
+  @media only screen and (max-width:$break_point_meduim){
+    grid-column: full-start/ full-end;
+  }
   p{
     font-size: 1.4rem;
   }
@@ -27,6 +32,16 @@
     grid-row-gap: 5rem;
     grid-column-gap: 1.5rem;
     align-items: center;
+
+
+    @media only screen and (max-width:$break_point_meduim){
+      grid-template-columns: repeat(3,min-content max-content);
+      grid-column-gap: 3rem;
+    }
+
+    @media only screen and (max-width:$break_point_small){
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &_heading{
